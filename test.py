@@ -9,7 +9,6 @@ define("port", default=8080, help="run on the given port", type=int)
 class IndexHandler(tornado.web.RequestHandler):
     def get(self):
         greeting = self.get_argument('q', 'Hello')
-
         self.write(greeting)
 
 if __name__ == "__main__":

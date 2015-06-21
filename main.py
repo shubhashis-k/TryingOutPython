@@ -12,17 +12,12 @@ import time
 from tornado.options import define, options
 define("port", default=8000, help="run on the given port", type=int)
 class IndexHandler(tornado.web.RequestHandler):
-    @tornado.web.asynchronous
+    @tornado.gen.coroutine
     def get(self):
         query = self.get_argument('q')
         client = tornado.httpclient.AsyncHTTPClient()
-        response = client.fetch("http://localhost:8080/?q=lollipop", callback=self.my_func)
-
-
-    def my_func(self, response):
+        response = yield client.fetch("http://localhost:8080/?q=lollipop")
         self.write(response.body)
-        self.finish()
-
 
 if __name__ == "__main__":
     tornado.options.parse_command_line()

@@ -9,6 +9,7 @@ from tornado.ioloop import IOLoop
 def my_callback():
     document = {'somekey': 'some value'}
     yield db.blog.insert(document)
+    print("Successfully inserted Value")
 
 
 
