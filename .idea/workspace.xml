@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1b3d7dbf-99cb-4ada-927f-450b09f945fb" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jsonpickleTest.py" afterPath="$PROJECT_DIR$/jsonpickleTest.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/motorTest2.py" afterPath="$PROJECT_DIR$/motorTest2.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="TryingOutPython.iws" />
@@ -460,7 +458,13 @@
       <option name="project" value="LOCAL" />
       <updated>1436085292834</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="testing motor, figuring out queries on mongodb with motor.&#10;&#10;POLICY FORMAT&#10;db.blog.insert(&#10;{&#10;&#9;&quot;policyNumber&quot; &#9;: 1,&#10;&#9;&quot;policy&quot;&#9;: &quot;policy 1&quot;,&#10;&#9;&quot;isActive&quot;&#9;: &quot;1&quot;,&#10;}&#10;)">
+      <created>1436121264377</created>
+      <option name="number" value="00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1436121264377</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -469,6 +473,7 @@
     <layout>
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2327044" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -480,7 +485,6 @@
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39915523" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -503,7 +507,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="some tryouts on magic methods" />
     <MESSAGE value="some tryouts on __getstate__, __setstate__ and jsonpickle. And necessity of __dict__" />
-    <option name="LAST_COMMIT_MESSAGE" value="some tryouts on __getstate__, __setstate__ and jsonpickle. And necessity of __dict__" />
+    <MESSAGE value="testing motor, figuring out queries on mongodb with motor.&#10;&#10;POLICY FORMAT&#10;db.blog.insert(&#10;{&#10;&#9;&quot;policyNumber&quot; &#9;: 1,&#10;&#9;&quot;policy&quot;&#9;: &quot;policy 1&quot;,&#10;&#9;&quot;isActive&quot;&#9;: &quot;1&quot;,&#10;}&#10;)" />
+    <option name="LAST_COMMIT_MESSAGE" value="testing motor, figuring out queries on mongodb with motor.&#10;&#10;POLICY FORMAT&#10;db.blog.insert(&#10;{&#10;&#9;&quot;policyNumber&quot; &#9;: 1,&#10;&#9;&quot;policy&quot;&#9;: &quot;policy 1&quot;,&#10;&#9;&quot;isActive&quot;&#9;: &quot;1&quot;,&#10;}&#10;)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
