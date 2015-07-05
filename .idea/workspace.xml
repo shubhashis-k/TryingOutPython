@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1b3d7dbf-99cb-4ada-927f-450b09f945fb" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/getstateSetstate.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jsonpickleTest.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jsonpickleTest.py" afterPath="$PROJECT_DIR$/jsonpickleTest.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/motorTest2.py" afterPath="$PROJECT_DIR$/motorTest2.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="TryingOutPython.iws" />
@@ -39,7 +39,7 @@
         <entry file="file://$PROJECT_DIR$/motorTest.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="18" selection-end-column="38" />
+              <caret line="9" column="40" selection-start-line="9" selection-start-column="40" selection-end-line="9" selection-end-column="40" />
               <folding>
                 <element signature="e#27#39#0" expanded="true" />
               </folding>
@@ -47,11 +47,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="motorTest2.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="motorTest2.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/motorTest2.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="10" column="28" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
+            <state vertical-scroll-proportion="0.40691927">
+              <caret line="13" column="9" selection-start-line="13" selection-start-column="9" selection-end-line="13" selection-end-column="23" />
               <folding>
                 <element signature="e#27#39#0" expanded="true" />
               </folding>
@@ -79,11 +79,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="jsonpickleTest.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="jsonpickleTest.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/jsonpickleTest.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6260297">
-              <caret line="20" column="12" selection-start-line="20" selection-start-column="12" selection-end-line="20" selection-end-column="12" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="36" column="21" selection-start-line="36" selection-start-column="21" selection-end-line="36" selection-end-column="21" />
               <folding />
             </state>
           </provider>
@@ -135,12 +135,12 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/motorTest.py" />
-        <option value="$PROJECT_DIR$/motorTest2.py" />
         <option value="$PROJECT_DIR$/magicMethods.py" />
         <option value="$PROJECT_DIR$/pickle.py" />
         <option value="$PROJECT_DIR$/getstateSetstate.py" />
         <option value="$PROJECT_DIR$/jsonpickle.py" />
         <option value="$PROJECT_DIR$/jsonpickleTest.py" />
+        <option value="$PROJECT_DIR$/motorTest2.py" />
       </list>
     </option>
   </component>
@@ -175,7 +175,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -197,6 +196,7 @@
         </subPane>
       </pane>
       <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -212,7 +212,7 @@
       <recent name="C:\Users\shubhashis\PycharmProjects\pythonLibraryTest\TryingOutPython" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.jsonpickle">
+  <component name="RunManager" selected="Python.motorTest2">
     <configuration default="false" name="motorTest2" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -429,11 +429,11 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.jsonpickle" />
-        <item index="1" class="java.lang.String" itemvalue="Python.pickle" />
-        <item index="2" class="java.lang.String" itemvalue="Python.magicMethods" />
-        <item index="3" class="java.lang.String" itemvalue="Python.classAndInheritance2" />
-        <item index="4" class="java.lang.String" itemvalue="Python.motorTest2" />
+        <item index="0" class="java.lang.String" itemvalue="Python.motorTest2" />
+        <item index="1" class="java.lang.String" itemvalue="Python.jsonpickle" />
+        <item index="2" class="java.lang.String" itemvalue="Python.pickle" />
+        <item index="3" class="java.lang.String" itemvalue="Python.magicMethods" />
+        <item index="4" class="java.lang.String" itemvalue="Python.classAndInheritance2" />
       </list>
     </recent_temporary>
   </component>
@@ -454,7 +454,13 @@
       <option name="project" value="LOCAL" />
       <updated>1435918521582</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="some tryouts on __getstate__, __setstate__ and jsonpickle. And necessity of __dict__">
+      <created>1436085292834</created>
+      <option name="number" value="00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1436085292834</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -496,7 +502,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="some tryouts on magic methods" />
-    <option name="LAST_COMMIT_MESSAGE" value="some tryouts on magic methods" />
+    <MESSAGE value="some tryouts on __getstate__, __setstate__ and jsonpickle. And necessity of __dict__" />
+    <option name="LAST_COMMIT_MESSAGE" value="some tryouts on __getstate__, __setstate__ and jsonpickle. And necessity of __dict__" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -521,14 +528,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/jsonpickleTest.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ClassAndInheritance.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -861,16 +860,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/motorTest.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="18" selection-end-column="38" />
-          <folding>
-            <element signature="e#27#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ClassAndInheritance.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -892,16 +881,6 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="8" column="20" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/motorTest2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="10" column="28" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
-          <folding>
-            <element signature="e#27#39#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -945,9 +924,37 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/jsonpickleTest.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6260297">
-          <caret line="20" column="12" selection-start-line="20" selection-start-column="12" selection-end-line="20" selection-end-column="12" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="36" column="21" selection-start-line="36" selection-start-column="21" selection-end-line="36" selection-end-column="21" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/motorTest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="9" column="40" selection-start-line="9" selection-start-column="40" selection-end-line="9" selection-end-column="40" />
+          <folding>
+            <element signature="e#27#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.virtualenvs/engineer/Lib/site-packages/tornado/gen.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33278418">
+          <caret line="885" column="0" selection-start-line="885" selection-start-column="0" selection-end-line="885" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/motorTest2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.40691927">
+          <caret line="13" column="9" selection-start-line="13" selection-start-column="9" selection-end-line="13" selection-end-column="23" />
+          <folding>
+            <element signature="e#27#39#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

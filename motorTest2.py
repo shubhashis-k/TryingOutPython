@@ -7,8 +7,11 @@ from tornado.ioloop import IOLoop
 
 @tornado.gen.coroutine
 def my_callback():
-    someValue = yield db.blog.find_one()
-    print(someValue['somekey'])
+    cursor = db.blog.find({"isActive" : "1"}, {"isActive":0})
+
+    while (yield cursor.fetch_next):
+         document = cursor.next_object()
+         print document
 
 client = motor.MotorClient('mongodb://localhost:27017')
 db = client.test
