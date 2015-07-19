@@ -9,26 +9,32 @@ import tornado.web
 from tornado.gen import Return
 import jsonpickle
 import motor
+from datetime import datetime
+
 
 from tornado.options import define, options
 define("port", default=8000, help="run on the given port", type=int)
 
+@tornado.gen.coroutine
+def generate_policy():
+    dt = datetime.now()
+    policy = {"number" : 1,"text" : "This is a random policy","is_active"	: "1","last_updatetime": dt.isoformat("T") }
+    raise Return(policy)
+
+
+@tornado.gen.coroutine
+def insert_policy(policy):
+        client = motor.MotorClient('mongodb://localhost:27017')
+        db = client.test
+        yield db.policies.insert(policy)
+
 class IndexHandler(tornado.web.RequestHandler):
     @tornado.gen.coroutine
     def get(self):
-        response = yield self.fetch_policies()
-        self.write(response)
+        policy = yield generate_policy()
+        yield insert_policy(policy)
+        self.write("data inserted")
 
-    @tornado.gen.coroutine
-    def fetch_policies(self):
-        cursor = db.policies.find({"isActive" : "1"}, {"isActive":0, "_id":0, "LastUpdateTime":0}).sort("policyNumber",1)
-        policies = []
-        while (yield cursor.fetch_next):
-             policies.append(cursor.next_object())
-
-        PolicyToJSON = jsonpickle.encode(policies, unpicklable=False)
-
-        raise Return(PolicyToJSON)
 
 if __name__ == "__main__":
     tornado.options.parse_command_line()

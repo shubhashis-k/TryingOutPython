@@ -12,7 +12,11 @@ def function1():
     print("blockade released")
 
 
+def ret(value):
+    yield(value)
+    yield("Hello 2")
 
-a = function1()
-print(a)
+
+print(ret("asd").next())
+
 

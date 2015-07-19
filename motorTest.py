@@ -1,29 +1,26 @@
 __author__ = 'shubhashis'
 
 import motor
-
+from datetime import datetime
 import tornado.gen
 from tornado.ioloop import IOLoop
 
-@tornado.gen.coroutine
+def run(method):
+    return tornado.ioloop.IOLoop.instance().run_sync(lambda: method)
+
 def my_callback():
-    document = {'somekey': 'some value'}
-    yield db.blog.insert(
+        db_name = 'test'
+        connection_string = 'mongodb://localhost:27017'
+        client = motor.MotorClient(connection_string)
+
+        run(client[db_name].policies.insert(
         {
-            "policyNumber" 	: 1,
-            "policy"	: "policy 1",
-            "isActive"	: "1",
-            "currdate"	: "new Date()"
+            "number" 	: 5,
+            "text"      : "This is a random policy",
+            "is_active"	: "1",
+            "last_updatetime": "some time"
         }
-    )
-    print("Successfully inserted Value")
+        ))
 
 
-
-client = motor.MotorClient('mongodb://localhost:27017')
-db = client.test
-
-IOLoop.current().run_sync(my_callback)
-
-
-
+my_callback()
